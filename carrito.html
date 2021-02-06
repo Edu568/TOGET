@@ -33,15 +33,129 @@
           </div>
     </header>
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-lg-6 mb-3">
-                    
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-lg-6 mb-3">
+            <div class="checkout-address">
+              <div class="title-left">
+                <h3>Direccion de envio</h3>
+                <form class="needs-validation" novalidate>
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <input type="text" class="form-control" id="Nombre" placeholder="Nombre" value="" required>
+                      <div class="invalid-feedback"> Nombre requerido </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" id="Apellido" placeholder="Apellido" value="" required>
+                    <div class="invalid-feedback"> Apellido requerido </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input type="email" class="form-control" id="Correo" placeholder="Correo Electronico" value="" required>
+                    <div class="invalid-feedback"> Correo requerido </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" id="Nombre" placeholder="Direccion" value="" required>
+                    <div class="invalid-feedback"> Direccion requerida </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input type="number" class="form-control" id="Phone" placeholder="Telefono" value="" required>
+                    <div class="invalid-feedback"> Telefono requerido </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" id="CP" placeholder="Codigo Postal" value="" required>
+                    <div class="invalid-feedback"> Codigo Postal requerido </div>
+                  </div>
+                  <hr class="mb-4">
+                  <div class="title"><span>Forma de pago</span></div>
+                  <div class="d-block my-3">
+                   <input type="radio" name="paymentMethod" checked required>
+                   <label class="" for="credit">Tarjeta De credito</label>
+                   <input type="radio" name="paymentMethod" checked required>
+                   <label class="" for="Mercado Pago">Mercado Pago</label>
+                   <br>
+                   <br>
+                   <br>
+                   <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-name">Nombre De La tarjeta</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required> 
+                        <div class="invalid-feedback"> Nombre De La Tarjeta is required </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-number">Numero De Tarjeta</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                        <div class="invalid-feedback"> Numero De La Tarjeta is required </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="cc-expiration">Vencimiento</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                        <div class="invalid-feedback"> Vencimiento required </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="cc-expiration">CVV</label>
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                        <div class="invalid-feedback"> Codigo de seguridad required </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <div class="payment-icon">
+                          <ul>
+                              <li><img class="img-fluid" src="images/payment-icon/1.png" alt=""></li>
+                              <li><img class="img-fluid" src="images/payment-icon/2.png" alt=""></li>
+                              <li><img class="img-fluid" src="images/payment-icon/3.png" alt=""></li>
+                              <li><img class="img-fluid" src="images/payment-icon/5.png" alt=""></li>
+                              <li><img class="img-fluid" src="images/payment-icon/7.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                  <hr class="mb-1">
+                </form>
+                
+              </div>
             </div>
+          </div>
+          <div class="col-sm-6 col-lg-6 mb-3">
+            <div class="row">
+              <div class="col-md-12 col-lg-12">
+                <div class="shipping-method-box">
+                  <div class="title-left">
+                    <h3>Metodo De Envio</h3>
+                  </div>
+                  <div class="mb-4">
+                    <div class="custom-control custom-radio">
+                        <input id="shippingOption1" name="shipping-option" class="" checked="checked" type="radio">
+                        <label class="" for="shippingOption1">Envio Standard</label> <span class="float-right font-weight-bold">Gratis</span> </div>
+                    <div class="ml-4 mb-2 small">(3-7 Dias Habiles)</div>
+                    <div class="custom-control custom-radio">
+                        <input id="shippingOption2" name="shipping-option" class="" type="radio">
+                        <label class="" for="shippingOption2">Envio Expres</label> <span class="float-right font-weight-bold">$600</span> </div>
+                    <div class="ml-4 mb-2 small">(2-4 Días Habiles)</div>
+                    <div class="custom-control custom-radio">
+                        <input id="shippingOption3" name="shipping-option" class="" type="radio">
+                        <label class="" for="shippingOption3">Envio al Día Siguiente</label> <span class="float-right font-weight-bold">$800</span> </div>
+                </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-    </main>
+                  
+
+                
+       
+
+
+                   
+                  
+
+                  
+                      
 
 
 
